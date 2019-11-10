@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Specificity</title>
+    <style>
+        .third-class .test-paragraph.test {
+            color: mediumblue;
+        }
+      .third-class .test-paragraph {
+            color: lawngreen;
+        }
+        .test-paragraph {
+            color: purple;
+        }
+        p {
+            color: green;
+        }
+        p {
+            color: red;
+        }
+        div .test-paragraph{
+            color: brown;
+        }
+        .first-class {
+            font-size: 30px;
+        }
+       
+    </style>
+    </head>
+    <body>
+        <div class="first-class">
+        <div class="second-class">
+            <div class="third-class">
+                <div class="fourth-class"> <p  id="testwithid" class="test-paragraph test">My Specificity example</p></div>
+            </div>
+        </div>
+        </div>
+
+        
+    </body>
+</html>
